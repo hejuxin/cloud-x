@@ -1,11 +1,13 @@
 {
   "scripts": {
+    "build": "webpack",
     "storybook": "start-storybook -p 7006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@babel/core": "^7.24.8",
     "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/plugin-transform-typescript": "^7.24.8",
     "@babel/preset-env": "^7.24.8",
     "@babel/preset-react": "^7.24.7",
     "@babel/runtime": "^7.24.8",
