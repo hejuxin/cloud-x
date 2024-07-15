@@ -13,4 +13,17 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
   },
+  module: {
+    rules: [
+      {
+        test: /\.(j|t)sx?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)(\?v=\d+\.\d+\.\d+)?$/i,
+        type: 'asset',
+      },
+    ]
+  }
 }
