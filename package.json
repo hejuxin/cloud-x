@@ -1,6 +1,16 @@
 {
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "unpkg": "dist/antd.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "dist",
+    "es",
+    "lib"
+  ],
   "scripts": {
     "build": "webpack",
+    "compile": "gulp compile",
     "storybook": "start-storybook -p 7006",
     "build-storybook": "build-storybook"
   },
@@ -30,6 +40,11 @@
     "@storybook/react": "6.3.8",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "react-docgen-typescript-plugin": "^1.0.8"
+    "gulp": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "merge2": "^1.4.1",
+    "react-docgen-typescript-plugin": "^1.0.8",
+    "rimraf": "5"
   }
 }
